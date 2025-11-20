@@ -9,13 +9,18 @@
   <body>
     <form>
       <h1>Temperature conversion:</h1>
-      <input type="number" id="textBox" value="0" /><br />
+      <input
+        type="number"
+        class="number textBox"
+        id="celsiusInput"
+        value="0"
+      /><br />
 
-      <input type="radio" id="toFahrenheit" name="card" />
-      <label for="toFahrenheit">Celsius to Fahrenheit</label><br />
+      <input type="radio" class="radio" id="toFahrenheit" name="card" />
+      <label for="toFahrenheit">Celsius a Fahrenheit</label><br />
 
-      Button <button type="submit" onclick="convert()">Convert</button>
-      <p id="result">Select a unit</p>
+      <button type="submit" class="submit" id="convertBtn">Convert</button>
+      <p class="result" id="resultText">Select a unit</p>
     </form>
     <script src="js/index.js"></script>
   </body>
