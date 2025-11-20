@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Calculator</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <!--The references while linking files, must follow the route(css/styles.css).-->
   </head>
   <body>
     <form>
       <h1>Temperature conversion:</h1>
-      <input type="number" id="textBox" value="0" /><br />
+      <input type="textBox" value="0" /><br />
+      <!-- type changed and id deleted. -->
 
-      <input type="radio" id="toFahrenheit" name="unit" />
+      <input type="radio" id="toFahrenheit" name="card" />
+      <!--Another type error: fixed. Logic of functions and types is necessary to be clear (name unit to card).-->
+
       <label for="toFahrenheit">Celsius to Fahrenheit</label><br />
 
-      <button type="button" onclick="convert()">Convert</button>
+      <button type="submit" onclick="convert()">Convert</button>
+      <!--A type error lead to a bug: fixed. Learning types(type button to submit).-->
       <p id="result">Select a unit</p>
     </form>
     <script src="js/index.js"></script>
+    <!--Be careful while referring to files: routes must be precise(js/index.js).-->
   </body>
 </html>
