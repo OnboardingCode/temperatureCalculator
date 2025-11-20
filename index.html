@@ -10,17 +10,22 @@
   <body>
     <form>
       <h1>Temperature conversion:</h1>
-      <input type="textBox" value="0" /><br />
-      <!-- type changed and id deleted. -->
+      <input
+        type="number"
+        class="number textBox"
+        id="celsiusInput"
+        value="0"
+      /><br />
+      <!-- code line 13 was modified: new input inserted with data.-->
 
-      <input type="radio" id="toFahrenheit" name="card" />
-      <!--Another type error: fixed. Logic of functions and types is necessary to be clear (name unit to card).-->
+      <input type="radio" class="radio" id="toFahrenheit" name="card" />
+      <label for="toFahrenheit">Celsius a Fahrenheit</label><br />
+      <!-- code lines 22 and 23 were modified: debugged and fixed code. Type, class and attributes-->
 
-      <label for="toFahrenheit">Celsius to Fahrenheit</label><br />
+      <button type="submit" class="submit" id="convertBtn">Convert</button>
+      <!-- code line 27 was modified: debugged and fixed code. Class and type changed.-->
 
-      <button type="submit" onclick="convert()">Convert</button>
-      <!--A type error lead to a bug: fixed. Learning types(type button to submit).-->
-      <p id="result">Select a unit</p>
+      <p class="result" id="resultText">Select a unit</p>
     </form>
     <script src="js/index.js"></script>
     <!--Be careful while referring to files: routes must be precise(js/index.js).-->
