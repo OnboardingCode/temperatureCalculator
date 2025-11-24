@@ -4,3 +4,5 @@ const toFCelsius = document.getElementById("toFCelsius"); //temp value to from F
 const submitBTN = document.getElementById("submit");//Submit acction BTN, must be on a Function.
 const result = document.getElementById("result"); //the result that will bi displayed on screen.
 let tempOutput; // Internal value for the result, this value stay on the code, and not displayed.
+
+//TODO Implement Temperature calculatio Logic
